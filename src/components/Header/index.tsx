@@ -1,8 +1,18 @@
 import * as React from 'react';
-import { AppBar, Container, Box, Toolbar, Typography } from '@mui/material';
+import {
+  AppBar,
+  Container,
+  Box,
+  Toolbar,
+  Button,
+  Typography,
+  Tooltip,
+  IconButton
+} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import { MenuItem, SearchInputBase, Search, LogoDot } from './styles';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function Header() {
   const handleOpenNavMenu = () => {};
@@ -23,7 +33,7 @@ function Header() {
           height: '7rem',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center'
+          justifyContent: 'space-around'
         }}
       >
         <Toolbar disableGutters>
@@ -49,6 +59,13 @@ function Header() {
           <SearchIcon />
           <SearchInputBase />
         </Search>
+        <Box>
+          <Tooltip title="Open cart">
+            <IconButton>
+              <ShoppingCartIcon style={{ color: '#fff' }} />
+            </IconButton>
+          </Tooltip>
+        </Box>
       </Container>
       <Container
         maxWidth="xl"
