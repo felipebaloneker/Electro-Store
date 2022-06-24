@@ -8,9 +8,24 @@ export const Search = styled.div`
   border-radius: 2rem;
   align-items: center;
   background-color: #fff;
-  width: 30rem;
-  height: 2.5rem;
+  width: 40rem;
+  height: 3rem;
   margin-left: 0%;
+  overflow: hidden;
+`;
+export const SearchButton = styled.button`
+  all: unset;
+  width: 15%;
+  height: 100%;
+  cursor: pointer;
+  background-color: var(--highlight-color);
+  color: var(--text-color-light);
+  font-weight: 700;
+  text-align: center;
+  transition: 0.2s ease;
+  &:hover {
+    background-color: var(--text-color-menu);
+  }
 `;
 
 export const LogoDot = styled.span`
