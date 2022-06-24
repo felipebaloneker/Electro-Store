@@ -71,28 +71,21 @@ function Header() {
           </Tooltip>
         </Box>
       </Container>
-      <Container
-        maxWidth="xl"
-        style={{
-          display: 'flex',
+      <Box
+        sx={{
+          flexGrow: 1,
+          display: { xs: 'none', md: 'flex' },
           background: '#fff',
           height: '4rem',
           alignItems: 'center'
         }}
       >
-        <Box
-          sx={{
-            flexGrow: 1,
-            display: { xs: 'none', md: 'flex' }
-          }}
-        >
-          {pages.map((page) => (
-            <MenuItem key={page} onClick={handleCloseNavMenu}>
-              {page}
-            </MenuItem>
-          ))}
-        </Box>
-      </Container>
+        {pages.map((page) => (
+          <MenuItem key={page} onClick={handleCloseNavMenu}>
+            {page}
+          </MenuItem>
+        ))}
+      </Box>
     </AppBar>
   );
 }
