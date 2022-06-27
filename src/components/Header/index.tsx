@@ -53,7 +53,7 @@ function Header() {
       >
         <Toolbar disableGutters>
           <Typography
-            variant="h4"
+            variant="h3"
             noWrap
             component="a"
             sx={{
