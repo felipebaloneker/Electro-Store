@@ -45,7 +45,7 @@ function Header() {
         style={{
           background: '#15161D',
           color: '#fff',
-          borderBottom: '0.2rem solid #d10024',
+          borderBottom: '0.2rem solid var(--highlight-color)',
           height: '7rem',
           display: 'flex',
           alignItems: 'center',

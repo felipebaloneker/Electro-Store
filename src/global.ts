@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
     --searchbackground-color:#15161D;
     --text-color-menu:#000;
     --text-color-light:#fff;
+    --card-background:#E4E7ED;
+    --card-highlight:#d10024;
   }
 `;
 export default GlobalStyle;
