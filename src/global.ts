@@ -3,6 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   *{
     font-family: monospace;
+    margin:0;
+    padding:0;
   }
   :root {
     --highlight-color: #d10024;

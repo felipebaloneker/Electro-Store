@@ -15,7 +15,7 @@ type Iprops = {
 
 function CardItem({ title, image }: Iprops) {
   return (
-    <Card sx={{ maxWidth: 350 }}>
+    <Card>
       <CardActionArea>
         <CardMedia component="img" height="140" image={image} alt={image} />
         <CardContent>
