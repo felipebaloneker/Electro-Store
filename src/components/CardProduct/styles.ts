@@ -14,6 +14,7 @@ export const StyledCardAction = styled.div`
   text-align: center;
   transition: 0.2s ease;
   border-radius: 0.5rem;
+  overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   &:hover {
     border: 0.15rem solid var(--highlight-color);

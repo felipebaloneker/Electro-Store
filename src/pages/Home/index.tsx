@@ -7,6 +7,8 @@ import shop02 from '../../assets/images/shop02.png';
 import shop03 from '../../assets/images/shop03.png';
 import { SectionTitle } from './styles';
 import CardProduct from '../../components/CardProduct';
+import Banner from '../../components/Banner';
+import Footer from '../../components/Footer';
 
 function Home() {
   return (
@@ -38,6 +40,7 @@ function Home() {
           </Grid>
         </Grid>
       </Box>
+
       <Box
         sx={{
           flexGrow: 1,
@@ -76,7 +79,41 @@ function Home() {
             price={980}
           />
         </Container>
+        <Banner />
+        {/* New Products  Section */}
+        <SectionTitle>TOP SELLING</SectionTitle>
+        <Container
+          sx={{
+            display: 'flex'
+          }}
+        >
+          <CardProduct
+            category="category"
+            name="product name goes here"
+            image={shop01}
+            price={980}
+          />
+          <CardProduct
+            category="category"
+            name="product name goes here"
+            image={shop02}
+            price={980}
+          />
+          <CardProduct
+            category="category"
+            name="product name goes here"
+            image={shop03}
+            price={980}
+          />
+          <CardProduct
+            category="category"
+            name="product name goes here"
+            image={shop03}
+            price={980}
+          />
+        </Container>
       </Box>
+      <Footer />
     </>
   );
 }
