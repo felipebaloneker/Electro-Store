@@ -5,7 +5,7 @@ import GlobalStyle from '../../global';
 import shop01 from '../../assets/images/shop01.png';
 import shop02 from '../../assets/images/shop02.png';
 import shop03 from '../../assets/images/shop03.png';
-import { Title } from './styles';
+import { SectionTitle } from './styles';
 import CardProduct from '../../components/CardProduct';
 
 function Home() {
@@ -45,13 +45,37 @@ function Home() {
         }}
       >
         {/* New Products  Section */}
-        <Title>NEW PRODUCTS</Title>
-        <CardProduct
-          category="category"
-          name="product name goes here"
-          image={shop01}
-          price={980}
-        />
+        <SectionTitle>NEW PRODUCTS</SectionTitle>
+        <Container
+          sx={{
+            display: 'flex'
+          }}
+        >
+          <CardProduct
+            category="category"
+            name="product name goes here"
+            image={shop01}
+            price={980}
+          />
+          <CardProduct
+            category="category"
+            name="product name goes here"
+            image={shop02}
+            price={980}
+          />
+          <CardProduct
+            category="category"
+            name="product name goes here"
+            image={shop03}
+            price={980}
+          />
+          <CardProduct
+            category="category"
+            name="product name goes here"
+            image={shop03}
+            price={980}
+          />
+        </Container>
       </Box>
     </>
   );

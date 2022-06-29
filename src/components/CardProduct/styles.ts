@@ -9,6 +9,7 @@ export const StyledCard = styled.div`
 export const StyledCardAction = styled.div`
   width: 100%;
   display: flex;
+  margin: 0.5rem;
   flex-direction: column;
   text-align: center;
   transition: 0.2s ease;
@@ -31,7 +32,7 @@ export const StyledButton = styled.button`
   background-color: var(--highlight-color);
   color: var(--text-color-light);
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: 0.5s ease;
   &:hover {
     background-color: var(--text-color-light);
