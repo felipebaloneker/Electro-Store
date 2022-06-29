@@ -9,7 +9,10 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --highlight-color: #d10024;
     --searchbackground-color:#15161D;
+    --background-color:#15161D;
     --text-color-menu:#000;
+    --text-color-dark:#15161D;
+    --text-color-gray:#B0B8C7;
     --text-color-light:#fff;
     --card-background:#E4E7ED;
     --card-highlight:#d10024;

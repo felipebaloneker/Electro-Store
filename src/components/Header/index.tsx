@@ -43,7 +43,7 @@ function Header() {
       <Container
         maxWidth="xl"
         style={{
-          background: '#15161D',
+          background: 'var(--background-color)',
           color: '#fff',
           borderBottom: '0.2rem solid var(--highlight-color)',
           height: '7rem',

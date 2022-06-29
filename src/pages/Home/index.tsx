@@ -6,6 +6,7 @@ import shop01 from '../../assets/images/shop01.png';
 import shop02 from '../../assets/images/shop02.png';
 import shop03 from '../../assets/images/shop03.png';
 import { Title } from './styles';
+import CardProduct from '../../components/CardProduct';
 
 function Home() {
   return (
@@ -43,7 +44,14 @@ function Home() {
           padding: '1rem'
         }}
       >
+        {/* New Products  Section */}
         <Title>NEW PRODUCTS</Title>
+        <CardProduct
+          category="category"
+          name="product name goes here"
+          image={shop01}
+          price={980}
+        />
       </Box>
     </>
   );
